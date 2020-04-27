@@ -1,0 +1,12 @@
+<div>
+    <h1>
+        {{member.name}} {{member.surname}}
+    </h1> 
+    name: {{member.name}}<br>
+    surname: {{member.surname}}<br>
+    phone: {{member.phone}}<br>
+    <img [src]="member.photo" [alt]="member.name + '(esse é só alt, foto mesmo está dando 404)'">
+</div>
+<div (click)="teste()">
+    clica aqui pra pegar o objeto desse membro
+</div>
