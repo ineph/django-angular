@@ -24,9 +24,4 @@ export class MemberComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  teste(){
-    console.log(this.member)
-  }
-
-
 }
