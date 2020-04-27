@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "members-backend"
+		},
+		{
+			"path": "members-frontend"
+		}
+	],
+	"settings": {}
+}
