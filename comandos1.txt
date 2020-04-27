@@ -1,0 +1,18 @@
+Front-end (Angular):
+
+"npm install -g @angular/cli" instala o CLI do angular (precisa do node)
+"ng new <app-name>" cria novo projeto
+"cd <app-name>" (a pasta terá o mesmo nome que o app)
+"ng serve" starta o projeto (algumas opções podem ser usadas aqui, como --open, que já abre o navegador onde o angular esta rodando)
+
+
+Back-end (Django):
+
+para rodar o django, deve-se rodar o comando ". /venv/bon/activate" dentro da pasta no qual o venv(virtual environment) esteja instalado. O prefixo da linha de comando ficará com "(venv)", indicando que deve-se esperar comandos dentro do ambiente virtual, no caso o comando "pip", bem como suas opções, podem ser rodadas agora. (DETALHES: https://www.django-rest-framework.org/tutorial/quickstart/)
+
+DETALHES:https://docs.djangoproject.com/en/3.0/ref/django-admin/
+"django-admin startproject <projectname>" cria projeto
+"python manage.py migrate" cria o banco
+"python manage.py migrate createsuperuser" cria administrador
+"python manage.py runserver"
+"python manage.py startapp"
