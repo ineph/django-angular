@@ -2,7 +2,4 @@ venv
 db.sqlite3
 members_profile
 __pycache__
-front+back(VSCodeWorkspace).code-workspace
 .vscode
-anotacoes
-comandos.txt
