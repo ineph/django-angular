@@ -15,4 +15,8 @@ export class Endpoints {
       return this.http.get<any>(`${environment.api}members/${id}/`)
     }
 
+    putMember(memberBody){
+      return this.http.put<any>(`${environment.api}members/${memberBody.id}/`, memberBody)
+    }
+
 }

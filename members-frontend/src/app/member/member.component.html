@@ -5,5 +5,15 @@
     name: {{member.name}}<br>
     surname: {{member.surname}}<br>
     phone: {{member.phone}}<br>
-    <img [src]="member.photo" [alt]="member.name">
+    <!-- <img [src]="member.photo" [alt]="member.name"> -->
+</div><br>
+
+<button *ngIf="isEditing === false"(click)="enableEdit()">Edit...</button>
+
+<div *ngIf="isEditing === true"> 
+    <input type="text" placeholder="Name" [(ngModel)]="inputName">
+    <input type="text" placeholder="Surname" [(ngModel)]="inputSurname">
+    <input type="text" placeholder="Phone" [(ngModel)]="inputPhone"><br>
+    <button (click)="submit()">Confirm</button>
+    <button (click)="disableEdit()">Cancel</button>
 </div>
