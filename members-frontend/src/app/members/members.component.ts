@@ -12,8 +12,7 @@ export class MembersComponent implements OnInit {
 
   constructor(private endpoints: Endpoints  ) {
     this.endpoints.getMembers().subscribe(res =>{ 
-      console.log(this.members = res),
-      console.log('Backend Message:')
+      this.members = res;
     })
    }
 

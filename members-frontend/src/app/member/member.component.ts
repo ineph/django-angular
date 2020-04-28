@@ -48,8 +48,7 @@ export class MemberComponent implements OnInit {
     this.inputBody.surname = this.inputSurname;
     this.inputBody.phone = this.inputPhone;
     this.inputBody.id = this.currentMemberId;
-    
-    console.log(this.inputBody)
+
     this.memberServicesURLS.putMember(this.inputBody).subscribe(res => console.log(res))
     this.disableEdit()
     alert('Changes already made. Reload the page to see...')

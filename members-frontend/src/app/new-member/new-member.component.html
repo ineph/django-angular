@@ -1,0 +1,5 @@
+<h1>Create New Member</h1>
+<input type="text" [(ngModel)]="inputName" placeholder="Name">
+<input type="text" [(ngModel)]="inputSurname" placeholder="Surname">
+<input type="text" [(ngModel)]="inputPhone" placeholder="Phone">
+<button (click)="submit()" routerLink="/members">Create</button>
