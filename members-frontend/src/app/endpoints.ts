@@ -23,4 +23,8 @@ export class Endpoints {
       return this.http.post<any>(`${environment.api}members/`, newMemberBody)
     }
 
+    deleteMember(memberId){
+      return this.http.delete(`${environment.api}members/${memberId}/`)
+    }
+
 }

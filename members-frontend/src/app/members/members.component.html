@@ -1,6 +1,7 @@
    <h1>Members</h1> 
     <ul>
         <li *ngFor="let member of members">
+            <button (click)="earaseMember(member.id)">Delete</button>
             <a [routerLink]="'/member/'+[member.id]">{{member.name}} {{member.surname}}</a>
             <img [src]="member.photo">
         </li>

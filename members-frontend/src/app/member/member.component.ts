@@ -51,7 +51,7 @@ export class MemberComponent implements OnInit {
 
     this.memberServicesURLS.putMember(this.inputBody).subscribe(res => console.log(res))
     this.disableEdit()
-    alert('Changes already made. Reload the page to see...')
+    alert('Changes made!')
   }
   
 }

@@ -18,4 +18,8 @@ export class MembersComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  earaseMember(memberId){
+    this.endpoints.deleteMember(memberId).subscribe(res => console.log(res));
+  }
 }
